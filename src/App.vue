@@ -1,7 +1,6 @@
 <template>
-<h>导航栏</h>
-<router-link to='/'>hua1</router-link>
-<router-link to='/2'>hua2</router-link>
+<router-link to='/'>主页</router-link>
+<router-link to='/doc'>文档</router-link>
 <hr/>
 <router-view/>
 </template>

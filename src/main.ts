@@ -1,17 +1,17 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+import './index.scss'
 import {createWebHashHistory,createRouter} from 'vue-router'
-import Hua from './components/Hua.vue'
-import Hua2 from './components/Hua2.vue'
+import HomePage from './views/HomePage.vue'
+import Doc from './views/Doc.vue'
  
 
 const history=createWebHashHistory()
 const router=createRouter({
   history,
   routes:[
-    {path:'/',component:Hua},
-    {path:'/2',component:Hua2}
+    {path:'/',component:HomePage},
+    {path:'/doc',component:Doc}
   ]
 })
 const app=createApp(App)
